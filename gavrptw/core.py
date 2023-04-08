@@ -161,7 +161,6 @@ def run_gavrptw(instance_name, unit_cost, init_cost, wait_cost, delay_cost, ind_
     for ind, fit in zip(pop, fitnesses):
         ind.fitness.values = fit
     print(f'  В поколении {len(pop)} особей')
-    # Begin the evolution
     for gen in range(n_gen):
         print(f'-- Поколение {gen} --')
         # Select the next generation individuals
